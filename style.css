@@ -1,0 +1,110 @@
+:root   {
+    --LightGrey: hsl(217, 12%, 63%);
+    --LightGrey-transparente: hsla(217, 12%, 63%, 0.204);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Overpass", sans-serif;
+    background-color: var(--VeryDarkBlue);
+}
+
+/* CARD RATING */
+.card-container-submit{
+    background-color: var(--DarkBlue);
+    padding: 30px;
+    margin: 50% 30px;
+    border-radius: 20px;
+}
+#star{
+    border-radius: 50%;
+    background-color: var(--LightGrey-transparente);
+    padding: 13px;
+    margin-bottom: 20px;
+}
+.title{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+.description{
+    margin-bottom: 20px;
+    color: var(--LightGrey);
+    font-size: 400;
+}
+.range-numbers{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.numbers{
+    color: var(--LightGrey);
+    border-radius: 50%;
+    background-color: var(--LightGrey-transparente);
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.numbers:hover{
+    color: white;
+    background-color: var(--LightGrey);
+}
+.submit{
+    background-color: var(--Orange);
+    border: none;
+    padding: 15px 100px;
+    width: 100%;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: white;
+    color: var(--Orange);
+}
+
+/* CARD THANKS */
+.card-container-thanks{
+    background-color: var(--DarkBlue);
+    padding: 30px;
+    margin: 50% 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+#thank-you-img{
+    margin: 25px 0;
+}
+.rating{
+    background-color: var(--LightGrey-transparente);
+    margin: 0 70px;
+    padding: 7px;
+    border-radius: 30px;
+    color: var(--Orange);
+}
+.thanks{
+    color: white;
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+.description-thanks{
+    color: var(--LightGrey);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
